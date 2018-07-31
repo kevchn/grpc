@@ -1,1 +1,6 @@
 *.o
+*.pb.h
+
+# Executables
+client
+server
