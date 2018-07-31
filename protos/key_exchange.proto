@@ -1,0 +1,16 @@
+syntax="proto3";
+
+package keyexchange;
+
+service KeyExchange {
+    rpc get_key(KeyRequest) returns (KeyReply) {}
+}
+
+message KeyRequest {
+    string name = 1;
+}
+
+message KeyReply {
+    string key = 1;
+}
+
